@@ -1,0 +1,46 @@
+<main>
+    <div>
+        <h3>Welcome to AngularEssentials</h3>
+        <p>To start open your code editor and find the home component to understand how it works
+            (src/app/features/home/).
+            Access the <a href="https://github.com/ManuDBasto/AngularEssentials/blob/main/README.md">Read me</a> formore
+            info.
+        </p>
+    </div>
+    <div>
+        <h3></h3>
+        <p>This folder contains four files:</p>
+        <ul>
+            <li>home.css: <span class="styled-text">Control the styles from here.</span></li>
+            <li>home.HTML: Set the HTML tags for the UI and DOM.</li>
+            <li>home.spec.ts: Testing file.</li>
+            <li>home.ts: The most important, and the one that allows you to set variaZbles and functionality to the web
+                using
+                the TypeScript.</li>
+        </ul>
+        <p>This is a component, each one of this files is binded together so you can start working on it without
+            configuring
+            something. You can learn how to create one in the read me.</p>
+    </div>
+
+    <div>
+        <h5>Variables and functions:</h5>
+        <p>Access to the home.ts file, to see how we set a variable: {{number}}. And we access to it using double
+            brackets.
+        </p>
+        <p>Also we can trigger functions using something like this counter:</p>
+        <h3>{{counter}}</h3>
+        <button type="button" class="btn btn-primary" (click)="add(1)">Add</button>
+    </div>
+    <div>
+        <h5>Navigation</h5>
+        <p>This is a single page app, which means it is not loading files as pages when we navigate through the app, but
+            instead the components are the ones changing and rotating in the app.</p>
+        <p>To set routes you need to go in the app.routes.ts file. And trigger the navigations trough links with
+            RouterLink or with a
+            function that triggers a navigation action.</p>
+        <p><a routerLink="item">Nav with link</a></p>
+        <button type="button" class="btn btn-success" (click)="goToHome()">Nav with button</button>
+        <p>The components are loaded in the location where the router-outlet tag is. In this case is in app.html.</p>
+    </div>
+</main>

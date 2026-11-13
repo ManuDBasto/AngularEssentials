@@ -1,0 +1,13 @@
+.styled-text {
+    color: red;
+}
+
+main {
+    display: grid;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+div {
+    width: clamp(300px, 70vw, 700px);
+}
